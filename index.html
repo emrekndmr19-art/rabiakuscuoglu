@@ -104,6 +104,29 @@
 </div>
 </div>
 </section>
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 px-6 py-12" id="service-modal" role="dialog" aria-modal="true" aria-labelledby="service-modal-title">
+<div class="w-full max-w-2xl rounded-3xl bg-white p-8 shadow-2xl">
+<div class="flex items-start justify-between gap-6">
+<div>
+<p class="text-xs uppercase tracking-[0.35em] text-[#9aa2a6]">Hizmet Detayı</p>
+<h3 class="mt-2 font-serif text-3xl text-charcoal" id="service-modal-title">Hizmet Başlığı</h3>
+</div>
+<button class="inline-flex size-10 items-center justify-center rounded-full border border-soft-border text-[#4f5960] transition hover:bg-soft-card" data-close-modal type="button" aria-label="Pencereyi kapat">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<p class="mt-4 text-base text-[#5f6a72]" id="service-modal-summary"></p>
+<div class="mt-6">
+<h4 class="text-sm font-semibold uppercase tracking-[0.2em] text-[#9aa2a6]">Öne Çıkanlar</h4>
+<ul class="mt-4 grid gap-3 text-sm text-[#4f5960]" id="service-modal-highlights"></ul>
+</div>
+<p class="mt-6 text-sm text-[#7a838a]" id="service-modal-note"></p>
+<div class="mt-8 flex flex-wrap gap-4">
+<a class="bg-primary text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#173754] transition-all" href="#iletisim">Randevu Oluştur</a>
+<button class="border border-soft-border px-6 py-3 rounded-full text-sm font-semibold text-[#4f5960] hover:bg-soft-card transition-all" data-close-modal type="button">Kapat</button>
+</div>
+</div>
+</div>
 <!-- ProfileHeader (About) -->
 <section class="bg-white py-24" id="hakkimda">
 <div class="max-w-[1280px] mx-auto px-6 lg:px-20">
@@ -169,7 +192,7 @@
 <div class="relative z-10 flex h-64 flex-col justify-end p-6 text-white">
 <h3 class="text-lg font-semibold">Bir Günde İmplant</h3>
 <p class="text-sm text-white/80">Gün içinde hızlı ve konforlu implant çözümleri.</p>
-<a class="mt-4 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur hover:bg-white/20" href="#iletisim">Detaylı İncele</a>
+<button class="mt-4 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur hover:bg-white/20" data-service="implant" type="button">Detaylı İncele</button>
 </div>
 </div>
 <div class="group relative rounded-[28px] overflow-hidden shadow-lg border border-soft-border">
@@ -178,7 +201,7 @@
 <div class="relative z-10 flex h-64 flex-col justify-end p-6 text-white">
 <h3 class="text-lg font-semibold">Yüz ve Gülüş Tasarımı</h3>
 <p class="text-sm text-white/80">Yüz oranlarına uygun estetik gülüş planlaması.</p>
-<a class="mt-4 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur hover:bg-white/20" href="#iletisim">Detaylı İncele</a>
+<button class="mt-4 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur hover:bg-white/20" data-service="smile-design" type="button">Detaylı İncele</button>
 </div>
 </div>
 <div class="group relative rounded-[28px] overflow-hidden shadow-lg border border-soft-border">
@@ -187,7 +210,7 @@
 <div class="relative z-10 flex h-64 flex-col justify-end p-6 text-white">
 <h3 class="text-lg font-semibold">Lazer Diş Hekimliği</h3>
 <p class="text-sm text-white/80">Hassas, minimal invaziv lazer uygulamaları.</p>
-<a class="mt-4 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur hover:bg-white/20" href="#iletisim">Detaylı İncele</a>
+<button class="mt-4 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur hover:bg-white/20" data-service="laser" type="button">Detaylı İncele</button>
 </div>
 </div>
 <div class="group relative rounded-[28px] overflow-hidden shadow-lg border border-soft-border">
@@ -196,7 +219,7 @@
 <div class="relative z-10 flex h-64 flex-col justify-end p-6 text-white">
 <h3 class="text-lg font-semibold">Şeffaf Plak Tedavisi</h3>
 <p class="text-sm text-white/80">Konforlu ve estetik plaklarla ortodonti.</p>
-<a class="mt-4 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur hover:bg-white/20" href="#iletisim">Detaylı İncele</a>
+<button class="mt-4 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur hover:bg-white/20" data-service="aligner" type="button">Detaylı İncele</button>
 </div>
 </div>
 <div class="group relative rounded-[28px] overflow-hidden shadow-lg border border-soft-border">
@@ -205,7 +228,7 @@
 <div class="relative z-10 flex h-64 flex-col justify-end p-6 text-white">
 <h3 class="text-lg font-semibold">Diş Eti Tedavileri</h3>
 <p class="text-sm text-white/80">Diş etinde sağlıklı ve estetik sonuçlar.</p>
-<a class="mt-4 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur hover:bg-white/20" href="#iletisim">Detaylı İncele</a>
+<button class="mt-4 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur hover:bg-white/20" data-service="gum" type="button">Detaylı İncele</button>
 </div>
 </div>
 <div class="group relative rounded-[28px] overflow-hidden shadow-lg border border-soft-border">
@@ -214,7 +237,7 @@
 <div class="relative z-10 flex h-64 flex-col justify-end p-6 text-white">
 <h3 class="text-lg font-semibold">Çocuk Diş Hekimliği</h3>
 <p class="text-sm text-white/80">Minikler için sıcak ve güvenli klinik deneyimi.</p>
-<a class="mt-4 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur hover:bg-white/20" href="#iletisim">Detaylı İncele</a>
+<button class="mt-4 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur hover:bg-white/20" data-service="pediatric" type="button">Detaylı İncele</button>
 </div>
 </div>
 </div>
@@ -401,4 +424,116 @@ Haritada Aç
 <p class="text-xs text-[#6c747a] text-center">© 2024 Dişhekimi Rabia Kuşçuoğlu. Tüm Hakları Saklıdır.</p>
 </div>
 </footer>
+<script>
+        const serviceDetails = {
+            implant: {
+                title: "Bir Günde İmplant",
+                summary: "Aynı gün içinde eksik dişin yerine geçecek implantın planlandığı, dijital ölçümlerle hızlanan ve iyileşme sürecini konforlu tutmayı hedefleyen bir yaklaşımdır.",
+                highlights: [
+                    "Dijital ölçü ve görüntüleme ile kişiye özel planlama.",
+                    "Cerrahi ve protez adımlarının tek randevuya sığdırılması.",
+                    "Hızlı iyileşme ve günlük yaşama daha kısa sürede dönüş.",
+                ],
+                note: "Uygunluk için kemik yapısı ve genel sağlık durumu değerlendirilir."
+            },
+            "smile-design": {
+                title: "Yüz ve Gülüş Tasarımı",
+                summary: "Yüz oranlarına göre diş formu, rengi ve dizilimini estetik bir bütünlükte kurgulayan, kişiye özgü bir gülüş planlama sürecidir.",
+                highlights: [
+                    "Dijital gülüş analizi ile yüz ve dudak uyumu.",
+                    "Diş rengi, formu ve boyutunun doğal görünümde seçilmesi.",
+                    "Tedavi başlamadan önce önizleme yapılabilmesi.",
+                ],
+                note: "Amaç, doğal ve dengeli bir gülüş estetiği oluşturmaktır."
+            },
+            laser: {
+                title: "Lazer Diş Hekimliği",
+                summary: "Hassas alanlarda dokuya minimum travmayla müdahale etmeyi sağlayan, iyileşmeyi destekleyen modern lazer uygulamalarıdır.",
+                highlights: [
+                    "Kesilere ve kanamaya daha az ihtiyaç duyulması.",
+                    "Doku iyileşme sürecinin desteklenmesi.",
+                    "Hassasiyetin azaltılmasına katkı sağlayan konforlu süreç.",
+                ],
+                note: "Lazer, uygun vakalarda klasik yöntemlere destek olarak kullanılabilir."
+            },
+            aligner: {
+                title: "Şeffaf Plak Tedavisi",
+                summary: "Dişleri aşamalı olarak hizalayan, çıkarılabilir ve estetik görünümü koruyan şeffaf plaklarla yapılan ortodontik tedavidir.",
+                highlights: [
+                    "Kişiye özel üretilen ve neredeyse görünmez plaklar.",
+                    "Yemek yerken ve diş fırçalarken çıkarılabilen yapı.",
+                    "Kontrollü ve planlı hareketlerle kademeli ilerleme.",
+                ],
+                note: "Plakların düzenli takılması tedavi başarısını doğrudan etkiler."
+            },
+            gum: {
+                title: "Diş Eti Tedavileri",
+                summary: "Diş eti sağlığını korumaya ve estetik görünümü iyileştirmeye odaklanan, iltihap kontrolü ve doku desteği sağlayan işlemler bütünüdür.",
+                highlights: [
+                    "Diş eti iltihabının kontrol altına alınması.",
+                    "Diş taşlarının temizlenmesi ve bakım planı oluşturulması.",
+                    "Gülüş estetiğini destekleyen doku düzenlemeleri.",
+                ],
+                note: "Düzenli bakım ve doğru hijyen alışkanlığı tedaviyi destekler."
+            },
+            pediatric: {
+                title: "Çocuk Diş Hekimliği",
+                summary: "Çocukların yaşına ve ihtiyaçlarına uygun, güven duygusunu pekiştiren ve ağız sağlığını erken dönemde koruyan yaklaşımları kapsar.",
+                highlights: [
+                    "Koruyucu uygulamalarla çürük riskinin azaltılması.",
+                    "Çocuklara özel iletişim ve rahatlatıcı klinik deneyimi.",
+                    "Süt dişlerinin sağlıklı gelişiminin takibi.",
+                ],
+                note: "Düzenli kontroller, kalıcı dişlerin sağlıklı çıkmasına destek olur."
+            }
+        };
+
+        const modal = document.getElementById("service-modal");
+        const modalTitle = document.getElementById("service-modal-title");
+        const modalSummary = document.getElementById("service-modal-summary");
+        const modalHighlights = document.getElementById("service-modal-highlights");
+        const modalNote = document.getElementById("service-modal-note");
+
+        const openModal = (serviceKey) => {
+            const detail = serviceDetails[serviceKey];
+            if (!detail) {
+                return;
+            }
+            modalTitle.textContent = detail.title;
+            modalSummary.textContent = detail.summary;
+            modalHighlights.innerHTML = detail.highlights
+                .map((item) => `<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span><span>${item}</span></li>`)
+                .join("");
+            modalNote.textContent = detail.note;
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+            document.body.classList.add("overflow-hidden");
+        };
+
+        const closeModal = () => {
+            modal.classList.add("hidden");
+            modal.classList.remove("flex");
+            document.body.classList.remove("overflow-hidden");
+        };
+
+        document.querySelectorAll("[data-service]").forEach((button) => {
+            button.addEventListener("click", () => openModal(button.dataset.service));
+        });
+
+        modal.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+        document.querySelectorAll("[data-close-modal]").forEach((button) => {
+            button.addEventListener("click", closeModal);
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && !modal.classList.contains("hidden")) {
+                closeModal();
+            }
+        });
+    </script>
 </body></html>
