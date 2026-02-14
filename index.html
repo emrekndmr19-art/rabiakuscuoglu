@@ -247,17 +247,13 @@
 <div class="absolute inset-0 bg-cover bg-center" style='background-image: url("disci.jpg");'></div>
 <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/10"></div>
 <div class="relative z-10 flex flex-col lg:flex-row gap-10 p-8 lg:p-12 text-white">
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 flex-1">
-<div class="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur">
-<p class="text-3xl font-semibold">%100</p>
-<p class="text-sm text-white/80 mt-2">Hasta Memnuniyeti</p>
-</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-1">
 <div class="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur">
 <p class="text-3xl font-semibold">9671</p>
 <p class="text-sm text-white/80 mt-2">Başarılı Operasyon</p>
 </div>
 <div class="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur">
-<p class="text-3xl font-semibold">4953</p>
+<p class="text-3xl font-semibold">8547</p>
 <p class="text-sm text-white/80 mt-2">Klinik Ziyaretçimiz</p>
 </div>
 </div>
@@ -363,12 +359,12 @@ Randevu Oluştur
 </div>
 </div>
 <div class="flex-1 bg-white p-8 rounded-2xl shadow-sm text-charcoal">
-<form class="space-y-4">
+<form action="https://formspree.io/f/mnjbpqld" class="space-y-4" method="POST">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<input class="w-full bg-soft-card border border-soft-border rounded-lg p-4 focus:ring-2 focus:ring-primary" placeholder="Adınız" type="text"/>
-<input class="w-full bg-soft-card border border-soft-border rounded-lg p-4 focus:ring-2 focus:ring-primary" placeholder="E-Posta Adresiniz" type="email"/>
+<input class="w-full bg-soft-card border border-soft-border rounded-lg p-4 focus:ring-2 focus:ring-primary" name="ad" placeholder="Adınız" type="text"/>
+<input class="w-full bg-soft-card border border-soft-border rounded-lg p-4 focus:ring-2 focus:ring-primary" name="email" placeholder="E-Posta Adresiniz" type="email"/>
 </div>
-<select class="w-full bg-soft-card border border-soft-border rounded-lg p-4 focus:ring-2 focus:ring-primary">
+<select class="w-full bg-soft-card border border-soft-border rounded-lg p-4 focus:ring-2 focus:ring-primary" name="hizmet">
 <option value="">Hizmet Seçiniz</option>
 <option value="cene-cerrahisi-implant">Çene Cerrahisi - İmplant</option>
 <option value="ortodonti">Ortodonti</option>
@@ -381,7 +377,7 @@ Randevu Oluştur
 <option value="travma">Travma Tedavisi</option>
 <option value="cene-botoksu">Çene Botoksu Diş Gıcırdatma Tedavisi</option>
 </select>
-<textarea class="w-full bg-soft-card border border-soft-border rounded-lg p-4 focus:ring-2 focus:ring-primary" placeholder="Mesajınız" rows="4"></textarea>
+<textarea class="w-full bg-soft-card border border-soft-border rounded-lg p-4 focus:ring-2 focus:ring-primary" name="mesaj" placeholder="Mesajınız" rows="4"></textarea>
 <button class="w-full bg-primary text-white font-semibold py-4 rounded-lg hover:bg-[#173754] transition-all" type="submit">Randevu Oluştur</button>
 </form>
 </div>
@@ -420,7 +416,7 @@ Randevu Oluştur
 Haritada Aç
 </a>
 </div>
-<p class="text-xs text-[#6c747a] text-center">© 2024 Dişhekimi Rabia Kuşcuoglu. Tüm Hakları Saklıdır.</p>
+<p class="text-xs text-[#6c747a] text-center">© 2026 Dişhekimi Rabia Kuşcuoglu. Tüm Hakları Saklıdır.</p>
 </div>
 </footer>
 <script>
